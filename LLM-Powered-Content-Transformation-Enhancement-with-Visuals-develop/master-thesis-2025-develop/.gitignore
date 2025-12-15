@@ -1,0 +1,47 @@
+.env
+.venv
+
+.ericai_authrecord
+# AzureOpenAIImage files
+ExampleCode/AzureOpenAIImage/checkmodels.py
+ExampleCode/AzureOpenAIImage/extraction_results.md
+ExampleCode/AzureOpenAIImage/image.py
+ExampleCode/AzureOpenAIImage/results/
+ExampleCode/AzureOpenAIImage/test-picture-1_analysis.md
+ExampleCode/AzureOpenAIImage/test-picture-1_analysis_diagram.svg
+ExampleCode/AzureOpenAIImage/test-picture-1_analysis_full_response.txt
+ExampleCode/AzureOpenAIImage/verifyaccess.sh
+
+# AzureOpenAIText files
+ExampleCode/AzureOpenAIText/AI-Special-Edition.md
+ExampleCode/AzureOpenAIText/AI-Special-Editionallinfo.md
+ExampleCode/AzureOpenAIText/extracttxtfromtext.py
+ExampleCode/AzureOpenAIText/temp_images/
+
+# DoclingExtractImageFromPDF files
+ExampleCode/DoclingExtractImageFromPDF/scratch/
+ExampleCode/DoclingExtractImageFromPDF/test.py
+
+# Ericai files
+ExampleCode/Ericai/extractinfofrompicdeepseek.py
+ExampleCode/Ericai/extraction_results.md
+ExampleCode/Ericai/test-picture-1.png
+
+# MarkdownToPPT files
+ExampleCode/MarkdownToPPT/AI-Special-Edition.pptx
+ExampleCode/MarkdownToPPT/combined_presentation.pptx
+ExampleCode/MarkdownToPPT/generateimg.py
+ExampleCode/MarkdownToPPT/generatepptfrommdO3.py
+ExampleCode/MarkdownToPPT/generatepptfrommdO4.py
+ExampleCode/MarkdownToPPT/imageandmdtoppt.py
+ExampleCode/MarkdownToPPT/images/
+ExampleCode/MarkdownToPPT/presentation_with_dalle_images.pptx
+ExampleCode/MarkdownToPPT/presentation_with_images.pptx
+ExampleCode/MarkdownToPPT/twomdfiletoppt.py
+
+# Python cache and generated content
+src/content_generator/__pycache__/
+src/content_generator/generator/__pycache__/
+src/content_generator/model_cache/
+src/content_generator/output/
+src/content_generator/testdirectory/

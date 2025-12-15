@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "content_generator"
+readme = {"file" = "README.md", "content-type" = "text/markdown"}
+dynamic = ["version", "dependencies", "optional-dependencies"]
+requires-python = ">=3.11"
+classifiers = [
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+
+[tool.setuptools_scm]
+version_file = "_version.py"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.ruff]
+line-length = 99
+indent-width = 4
+include = ["*.py", "*.pyi", "**/pyproject.toml"]
+respect-gitignore = true # anything in .gitignore will be ignored by Ruff.
+show-fixes = true
+output-format = "grouped"
+
+[tool.ruff.lint.isort]
+relative-imports-order = "closest-to-furthest"
+
+[tool.ruff.lint]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.codespell]
+skip=["./src/content_generator/generator/example.py", "./src/content_generator/addons/docx_parser/docx_parser_result.ipynb","./notebooks/*.ipynb","./in"]
+ignore-words-list=["UE","UEs"]
